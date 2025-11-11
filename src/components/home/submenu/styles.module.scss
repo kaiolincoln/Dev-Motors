@@ -1,0 +1,50 @@
+
+.submenu{
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 64px 14px 4px 14px;
+}
+
+.submenuIcon{
+    display: none;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    cursor: pointer
+
+}
+
+.ul{
+    display: none;
+    list-style: none;
+    padding: 14px 0;
+    gap: 32px;
+
+    li a{
+        background-color: #121212;
+        color: #FFF;
+        padding: 8px 16px;
+        border-radius: 4px;
+    }
+}
+
+@media (min-width: 768px){
+    .submenu{
+        padding: 32px 14px 4px 14px;
+    }
+
+    .submenuIcon{
+        display: flex;
+    }
+
+    .ul{
+        display: flex;
+    }
+}
+
+@media (max-width: 767px){
+     .submenuIcon{
+        display: inline-flex;
+    }
+}
+
