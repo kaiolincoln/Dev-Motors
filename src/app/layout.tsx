@@ -16,6 +16,21 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "DevMotors - Sua oficina de confiança",
   description: "Oficina de carros especializada em manutenção e reparos.",
+  keywords: ["oficina", "oficina carros", "carros",  "manutencao de carros"],
+  openGraph: {
+    title: "DevMotors - Sua oficina de confiança",
+    images: [ `${process.env.NEXT_PUBLIC_URL}/logo.jpg`]
+  },
+  robots:{
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+    }
+  }
 };
 
 export default function RootLayout({
